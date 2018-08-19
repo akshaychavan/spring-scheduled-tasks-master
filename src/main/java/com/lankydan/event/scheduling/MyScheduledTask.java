@@ -13,23 +13,30 @@ import com.lankydan.event.scheduling.annotation.MyScheduler;
 public class MyScheduledTask {
 	
 	
-	private static final Logger log = LoggerFactory.getLogger(MyScheduledTask.class);
+// 	private static final Logger log = LoggerFactory.getLogger(MyScheduledTask.class);
 
 	
-	@Scheduled(cron = "0 14 19 * * ?")
-   public void doJobOld() {
+// 	@Scheduled(cron = "0 14 19 * * ?")
+//    public void doJobOld() {
 
-//		myScheduledAnnotationBeanPostProcessor.getRegistrar().getTriggerTaskList().forEach(x -> {
-//			log.info(x.toString());
-//		});
+// //		myScheduledAnnotationBeanPostProcessor.getRegistrar().getTriggerTaskList().forEach(x -> {
+// //			log.info(x.toString());
+// //		});
 
    
-   }
+//    }
 	
 	@MyScheduler
     public void doJob() {
 
 		log.info(" doJob " + new Date());
+    
+    }
+	
+		@MyScheduler
+    public void doJob1() {
+
+		log.info(" doJob new " + new Date());
     
     }
 
