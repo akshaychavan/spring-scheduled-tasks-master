@@ -14,18 +14,16 @@ public class MyScheduledTask {
 	
 	private static final Logger log = LoggerFactory.getLogger(MyScheduledTask.class);
 
-//	@Autowired
-//	MyScheduledAnnotationBeanPostProcessor myScheduledAnnotationBeanPostProcessor;
 	
-//	@Scheduled(cron = "0 14 19 * * ?")
-//    public void doJobOld() {
-//
-//		myScheduledAnnotationBeanPostProcessor.getRegistrar().getTriggerTaskList().forEach(x -> {
-//			log.info(x.toString());
-//		});
-//
-//    
-//    }
+	@Scheduled(cron = "0 14 19 * * ?")
+   public void doJobOld() {
+
+		myScheduledAnnotationBeanPostProcessor.getRegistrar().getTriggerTaskList().forEach(x -> {
+			log.info(x.toString());
+		});
+
+   
+   }
 	
 	@MyScheduler
     public void doJob() {
