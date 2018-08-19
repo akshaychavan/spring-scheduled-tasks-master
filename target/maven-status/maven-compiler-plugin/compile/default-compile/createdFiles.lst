@@ -1,0 +1,9 @@
+com\lankydan\event\AverageKey.class
+com\lankydan\Application.class
+com\lankydan\event\EventKey.class
+com\lankydan\event\repository\EventRepository.class
+com\lankydan\event\scheduling\AverageMonitor.class
+com\lankydan\event\Event.class
+com\lankydan\event\repository\AverageRepository.class
+com\lankydan\event\scheduling\EventCreator.class
+com\lankydan\event\Average.class
