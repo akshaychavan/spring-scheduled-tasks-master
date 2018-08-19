@@ -11,8 +11,9 @@ import com.lankydan.event.scheduling.annotation.MyScheduler;
 @Component
 public class MyScheduledTask {
 	
-	
+
  	private static final Logger log = LoggerFactory.getLogger(MyScheduledTask.class);
+
 
 	
 // 	@Scheduled(cron = "0 14 19 * * ?")
